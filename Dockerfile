@@ -2,16 +2,20 @@ FROM node:alpine
 
 LABEL author="Claus Heinrich"
 
-WORKDIR /app
+RUN apk add git
 
-COPY package.json package.json
+RUN git clone https://github.com/cmh1506/spociv-backend.git
+
+WORKDIR /spociv-backend
+
+#COPY package.json package.json
 RUN npm install
 
-COPY . .
+#COPY . .
 
-EXPOSE 3000
+#EXPOSE 3000
 
-ENTRYPOINT ["node", "server.js"]
+#ENTRYPOINT ["node", "server.js"]
 
 # docker build -t cmh1506/spociv-backend:1.0.0 .
 # docker push cmh1506/spociv-backend:1.0.0
