@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmh1506/spocIV-backend.git"
+  },
+  "keywords": [
+    "spoc",
+    "backend"
+  ],
+  "author": "Claus Heinrich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmh1506/spocIV-backend/issues"
+  },
+  "homepage": "https://github.com/cmh1506/spocIV-backend#readme"
+}
